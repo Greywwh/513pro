@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background-color: antiquewhite;
+  padding-bottom: 50px;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+
+}
+
+a#a1 {
+  display: inline-block;
+  height: 40px;
+  
+  }
+
+.nav {
+  position: fixed;
+  /*background-color: rgb(160, 64, 0);*/
+  background-image:url('https://images2.alphacoders.com/243/243340.jpg');
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgb(206, 83, 255);
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav h1{
+  font-size: xx-large;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.nav.active {
+  /*background-color: rgb(233, 192, 138);*/
+  background-image: url('https://images5.alphacoders.com/423/423551.jpg');
+  box-shadow: 0 2px 10px rgb(0, 255, 242);
+}
+
+.nav.active a {
+  color: rgb(255, 238, 0);
+  font-size: x-large;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #4df772;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.800b11caa67a4c94948fbb7e4f6d1239?rik=RkqzpK%2b75UA3dA&riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f50132%2f0508.jpg_wh300.jpg!%2ffh%2f300%2fquality%2f90&ehk=Sj2HiQKTby1K%2fCAZ2RcpizVfzX7Tqz3HD4m4Xv3WgSY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero1 {
+  background-image: url('https://c.wallhere.com/photos/ae/c3/bakery_bread_photography-1197270.jpg!d');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero2 {
+  background-image: url('https://b.zol-img.com.cn/soft/6/607/ce0khU5bxmZ2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero3 {
+  background-image: url('https://images7.alphacoders.com/108/1083331.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero4 {
+  background-image: url('https://www.stockland.com.au/~/media/shopping-centre/common/stockland-baringa/stores/sg-bakery/bakery-1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+
+.hero5 {
+  background-image: url('https://thelausanneguide.com/wp-content/uploads/2021/05/exterior-2-768x516.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+  
+}
+
+.hero1 h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  color: rgb(54, 4, 4);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero2 h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  color: rgb(255, 255, 255);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero3 h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  color: rgb(255, 255, 255);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero4 h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  color: rgb(255, 255, 255);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero5 h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  color: rgb(255, 255, 255);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.hero1 p {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+  background-color: aqua;
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+    font-family:cursive;text-shadow:6px 2px 2px rgb(255, 255, 255);color:rgb(255, 146, 4);
+  font: italic 2em Georgia, serif;
+}
+
+
+
+.content ul{
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+    font-family:cursive;text-shadow:6px 2px 2px rgb(255, 255, 255);color:rgb(255, 146, 4);
+  font: italic 2em Georgia, serif;
+}
+
+.content label{
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+    font-family:cursive;text-shadow:6px 2px 2px rgb(255, 255, 255);color:rgb(255, 146, 4);
+  font: italic 2em Georgia, serif;
+}
+
+
+
+
+.logo1{
+  height: 100px;
+  width: 150px;
+  position: 0% 0%;
+}
+
+  
+.footer {
+  background-image: url('https://images5.alphacoders.com/423/423551.jpg');
+  color: white;
+  padding: 0.9375em;
+  text-align: center;
+  font-family:cursive;text-shadow:6px 2px 2px #333;color:rgb(255, 255, 255);
+  font: italic 2em Georgia, serif;
+  position: relative;
+  bottom: -100px;
+  height: 350px;
+}
+.footer a {
+  color: #F7EE1A;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+
+/* footer  */
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer .footer-right{
+	width: 20%;
+}
+
+.footer .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+	margin-top: 25px;
+}
+
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
